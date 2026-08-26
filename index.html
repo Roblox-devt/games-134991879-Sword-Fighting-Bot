@@ -143,7 +143,7 @@
         .editor-header h2 { margin: 0; font-size: 24px; text-align: center; flex: 1; pointer-events: none; }
         #avatar-close-btn { width: 32px; height: 32px; cursor: pointer; display: flex; align-items: center; justify-content: center; pointer-events: auto; }
         #avatar-close-btn svg { width: 24px; height: 24px; }
-        #avatar-save-btn { background: #0077ff; color: #fff; border: none; border-radius: 12px; padding: 8px 24px; font-size: 16px; font-weight: bold; cursor: pointer; transition: background 0.2s; pointer-events: auto; }
+        #avatar-save-btn { background: #0077ff; color: #fff; border: none; border-radius: 12px; padding: 8px 24px; font-size: 16px; font-weight: bold; cursor: pointer; transition:background 0.2s; pointer-events: auto; }
         #avatar-save-btn:hover { background: #0066dd; }
         .editor-tab-strip { display: flex; width: 100%; gap: 10px; margin-bottom: 15px; }
         .editor-tab-btn { flex: 1; text-align: center; padding: 10px 0; font-size: 16px; font-weight: 600; color: #aaa; background: #222; border-radius: 8px; cursor: pointer; transition: 0.2s; }
@@ -216,22 +216,22 @@
         .info-saved-toast.show { opacity: 1; transform: translateY(0); }
         
         /* Custom Top Text Bar */
-        #top-text-bar { position: absolute; top: 15px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 20px; z-index: 90; color: white; font-family: 'Open Sans', sans-serif; font-size: 14px; pointer-events: auto; }
+        #top-text-bar { position: absolute; top: 0px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 20px; z-index: 90; color: white; font-family: 'Open Sans', sans-serif; font-size: 14px; pointer-events: auto; background: transparent; padding: 0; border-radius: 0; }
         #options-btn-container { cursor: pointer; }
-        #options-box { width: 80px; height: 24px; background: rgba(255,255,255,0.2); border-radius: 4px; transition: background 0.2s; display: flex; align-items: center; justify-content: center; font-size: 14px; }
+        #options-box { width: 80px; height: 24px; background: rgba(255,255,255,0.2); border-radius: 0px; transition: background 0.2s; display: flex; align-items: center; justify-content: center; font-size: 14px; border: none; }
         #options-btn-container:hover #options-box { background: rgba(255,255,255,0.4); }
         
         /* Custom Options Menu */
-        #options-menu { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(0.9); opacity: 0; width: 320px; background: rgba(0,0,0,0.85); padding: 20px; border-radius: 12px; z-index: 105; display: none; flex-direction: column; gap: 12px; color: white; box-shadow: 0 8px 20px rgba(0,0,0,0.6); transition: transform 0.2s, opacity 0.2s; pointer-events: auto; }
+        #options-menu { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(0.9); opacity: 0; width: 320px; background: transparent; padding: 20px; border-radius: 0px; z-index: 105; display: none; flex-direction: column; gap: 12px; color: white; box-shadow: none; transition: transform 0.2s, opacity 0.2s; pointer-events: auto; }
         #options-menu.open { display: flex; transform: translate(-50%, -50%) scale(1); opacity: 1; }
         .opt-row { display: flex; gap: 10px; align-items: center; }
-        .opt-square-btn { width: 32px; height: 32px; background: rgba(255,255,255,0.2); border: none; color: white; font-size: 18px; cursor: pointer; border-radius: 6px; display: flex; align-items: center; justify-content: center; transition: background 0.2s; flex-shrink: 0; }
+        .opt-square-btn { width: 32px; height: 32px; background: rgba(255,255,255,0.2); border: none; color: white; font-size: 18px; cursor: pointer; border-radius: 0px; display: flex; align-items: center; justify-content: center; transition: background 0.2s; flex-shrink: 0; }
         .opt-square-btn:hover { background: rgba(255,255,255,0.4); }
-        .opt-middle-panel { flex: 1; height: 32px; background: rgba(255,255,255,0.1); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 600; }
-        .opt-left-panel { flex: 1; height: 32px; background: rgba(255,255,255,0.1); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 14px; }
-        .opt-right-btn { width: 100px; height: 32px; background: rgba(255,255,255,0.2); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 14px; cursor: pointer; transition: background 0.2s; }
+        .opt-middle-panel { flex: 1; height: 32px; background: rgba(255,255,255,0.1); border-radius: 0px; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 600; }
+        .opt-left-panel { flex: 1; height: 32px; background: rgba(255,255,255,0.1); border-radius: 0px; display: flex; align-items: center; justify-content: center; font-size: 14px; }
+        .opt-right-btn { width: 100px; height: 32px; background: rgba(255,255,255,0.2); border-radius: 0px; display: flex; align-items: center; justify-content: center; font-size: 14px; cursor: pointer; transition: background 0.2s; }
         .opt-right-btn:hover { background: rgba(255,255,255,0.4); }
-        .opt-full-btn { width: 100%; height: 36px; background: rgba(255,255,255,0.2); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 14px; cursor: pointer; transition: background 0.2s; }
+        .opt-full-btn { width: 100%; height: 36px; background: rgba(255,255,255,0.2); border-radius: 0px; display: flex; align-items: center; justify-content: center; font-size: 14px; cursor: pointer; transition: background 0.2s; }
         .opt-full-btn:hover { background: rgba(255,255,255,0.4); }
         #version-text { text-align: center; font-size: 10px; color: rgba(255,255,255,0.5); margin-top: 4px; }
     </style>
@@ -329,8 +329,6 @@
         let isDead = false, activeDebris = [], respawnTimer = 0;
         const GRAVITY = 196.2;
         let npcs = []; 
-        
-        let playerLastHitState = '';
         
         let invDragData = null;
         let equipSound, slashSound, lungeSound;
@@ -441,7 +439,8 @@
                 let angle = (npcs.length / gameBots) * Math.PI * 2;
                 let radius = 2.0;
                 let p = new THREE.Vector3(Math.cos(angle) * radius, 7.625, Math.sin(angle) * radius);
-                spawnNPC(`Bot ${npcs.length + 1}`, p);
+                spawnNPC("Bot", p);
+                playEquipSoundForNPC((npcs.length - 1) * 250);
             }
             while (npcs.length > gameBots) {
                 let n = npcs.pop();
@@ -450,6 +449,16 @@
             }
         }
         
+        function playEquipSoundForNPC(delay = 0) {
+            setTimeout(() => {
+                if (equipSound && audioVolume > 0) {
+                    const s = equipSound.cloneNode();
+                    s.volume = audioVolume / 10;
+                    s.play().catch(() => {});
+                }
+            }, delay);
+        }
+
         function checkPhone() { return /iPhone|iPod|Android.*Mobile/i.test(navigator.userAgent) || (isMobile && Math.min(window.innerWidth, window.innerHeight) < 600); }
         function loadPlayerInfo() { const s = localStorage.getItem('toh_displayName'); if (s !== null && s !== '') playerDisplayName = s; const u = localStorage.getItem('toh_username'); if (u !== null) playerUsername = u; const c = localStorage.getItem('toh_chatTagColor'); if (c !== null && CHAT_TAG_COLORS.includes(c)) chatTagColor = c; else { chatTagColor = CHAT_TAG_COLORS[Math.floor(Math.random() * CHAT_TAG_COLORS.length)]; localStorage.setItem('toh_chatTagColor', chatTagColor); } updateLeaderboardName(); }
         function setupSoundObjects() { walkAudio = new Audio(WALK_SOUND_URL); walkAudio.volume = audioVolume / 10; walkAudio.loop = true; walkAudio.preload = 'auto'; climbAudio = new Audio(CLIMB_SOUND_URL); climbAudio.volume = audioVolume / 10; climbAudio.preload = 'auto'; jumpAudio = new Audio(JUMP_SOUND_URL); jumpAudio.volume = audioVolume / 10; jumpAudio.preload = 'auto'; deathAudio = new Audio(DEATH_SOUND_URL); deathAudio.volume = audioVolume / 10; deathAudio.preload = 'auto'; }
@@ -458,6 +467,75 @@
         function renderColorPicker() { const c = document.getElementById('pi-color-picker'); if (!c) return; c.innerHTML = ''; CHAT_TAG_COLORS.forEach(color => { const e = document.createElement('div'); e.className = 'color-circle' + (color === chatTagColor ? ' selected' : ''); e.style.backgroundColor = color; e.dataset.color = color; e.addEventListener('click', () => { chatTagColor = color; renderColorPicker(); }); c.appendChild(e); }); }
         function savePlayerInfo() { const n = document.getElementById('pi-display-name').value.trim() || 'Player'; const u = document.getElementById('pi-username').value.trim(); playerDisplayName = n; playerUsername = u; localStorage.setItem('toh_displayName', n); localStorage.setItem('toh_username', u); localStorage.setItem('toh_chatTagColor', chatTagColor); updateLeaderboardName(); const t = document.getElementById('info-saved-toast'); t.classList.add('show'); setTimeout(() => t.classList.remove('show'), 2200); }
         function applyRandomSpawn() { const s = [{x:60,z:0},{x:-60,z:0},{x:0,z:60},{x:0,z:-60},{x:60,z:60},{x:-60,z:60},{x:60,z:-60},{x:-60,z:-60}][Math.floor(Math.random()*8)]; playerPos.set(s.x, 7.625, s.z); playerVel.set(0,0,0); camYaw = Math.atan2(s.x, s.z); camPitch = 0; if (charGroup) charGroup.rotation.y = Math.atan2(-s.x, -s.z); }
+
+        function createSkyDecorations() {
+            // Glowing Sun
+            const sunCanvas = document.createElement('canvas');
+            sunCanvas.width = 256; sunCanvas.height = 256;
+            const sunCtx = sunCanvas.getContext('2d');
+            const sunGrad = sunCtx.createRadialGradient(128, 128, 0, 128, 128, 128);
+            sunGrad.addColorStop(0, 'rgba(255, 255, 255, 1)');
+            sunGrad.addColorStop(0.2, 'rgba(255, 255, 255, 0.9)');
+            sunGrad.addColorStop(0.5, 'rgba(255, 255, 255, 0.4)');
+            sunGrad.addColorStop(1, 'rgba(255, 255, 255, 0)');
+            sunCtx.fillStyle = sunGrad;
+            sunCtx.fillRect(0, 0, 256, 256);
+            const sunTex = new THREE.CanvasTexture(sunCanvas);
+            const sunMat = new THREE.SpriteMaterial({ map: sunTex, transparent: true, depthTest: true, depthWrite: false });
+            const sunSprite = new THREE.Sprite(sunMat);
+            sunSprite.scale.set(400, 400, 1);
+            sunSprite.position.set(0, 1000, 0); 
+            scene.add(sunSprite);
+
+            // Cartoony Clouds
+            const cloudCanvas = document.createElement('canvas');
+            cloudCanvas.width = 512; cloudCanvas.height = 256;
+            const cloudCtx = cloudCanvas.getContext('2d');
+            
+            const shadowOff = 20;
+            const pts = [
+                {x: 150, y: 150, r: 60},
+                {x: 250, y: 120, r: 80},
+                {x: 360, y: 140, r: 70},
+                {x: 200, y: 170, r: 70},
+                {x: 300, y: 180, r: 80}
+            ];
+            
+            // Light blue shadow circles
+            cloudCtx.fillStyle = 'rgba(173, 216, 230, 0.8)';
+            pts.forEach(p => {
+                cloudCtx.beginPath();
+                cloudCtx.arc(p.x + shadowOff, p.y + shadowOff, p.r, 0, Math.PI * 2);
+                cloudCtx.fill();
+            });
+            
+            // White circles
+            cloudCtx.fillStyle = '#ffffff';
+            pts.forEach(p => {
+                cloudCtx.beginPath();
+                cloudCtx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+                cloudCtx.fill();
+            });
+            
+            const cloudTex = new THREE.CanvasTexture(cloudCanvas);
+            // depthTest: true ensures clouds are occluded by closer geometry (player, bots, map)
+            const cloudMat = new THREE.SpriteMaterial({ map: cloudTex, transparent: true, depthTest: true, depthWrite: false });
+            
+            // Generate clouds in a large dome, both above and below the horizon
+            for (let i = 0; i < 40; i++) {
+                const cloudSprite = new THREE.Sprite(cloudMat);
+                const scale = 300 + Math.random() * 400;
+                cloudSprite.scale.set(scale, scale / 2, 1);
+                const angle = Math.random() * Math.PI * 2;
+                const radius = 400 + Math.random() * 800; // Spread beyond the map radius
+                cloudSprite.position.set(
+                    Math.cos(angle) * radius,
+                    (Math.random() > 0.5 ? 1 : -1) * (200 + Math.random() * 300), // Above and below horizon
+                    Math.sin(angle) * radius
+                );
+                scene.add(cloudSprite);
+            }
+        }
 
         async function init() {
             try {
@@ -473,6 +551,7 @@
                 ambientLight = new THREE.AmbientLight(0xffffff, 0.8); scene.add(ambientLight);
                 sun = new THREE.DirectionalLight(0xffffff, 1.0); sun.position.set(50, 200, 50); scene.add(sun);
                 buildPlayground();
+                createSkyDecorations();
                 try { await document.fonts.load('80px Orbitron'); await document.fonts.load('50px Orbitron'); } catch(e) {}
                 buildCharacter();
                 playerInventory[0] = { id: 'sword', name: 'Sword', icon: 'https://tr.rbxcdn.com/180DAY-e39f79dce4937ea8598d4a5a793a0da0/420/420/Gear/Webp/noFilter' };
@@ -485,7 +564,7 @@
                 setTimeout(() => { if(!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)(); checkPointerLockNeeds(); const l = document.getElementById('loading-screen'); l.style.opacity = '0'; setTimeout(() => l.style.display = 'none', 500); if (currentInputMode === 'mobile') document.getElementById('mobile-controls').style.display = 'block'; updateMovementModeUI(); isRunning = true; }, 2000);
                 window.addEventListener('resize', () => { camera.aspect = window.innerWidth / window.innerHeight; camera.updateProjectionMatrix(); renderer.setSize(window.innerWidth, window.innerHeight); if (previewRenderer) { const c = document.getElementById('avatar-preview-container'); previewCamera.aspect = c.clientWidth / c.clientHeight; previewCamera.updateProjectionMatrix(); previewRenderer.setSize(c.clientWidth, c.clientHeight); } });
                 document.addEventListener('pointerlockchange', () => { if (document.pointerLockElement !== renderer.domElement && isRunning && !isMenuOpen && !isAvatarEditorOpen) { if (isShiftLock || camDist <= FIRST_PERSON_DIST) openPauseMenu(); } });
-                window.addEventListener('keydown', (e) => { if (document.activeElement && document.activeElement.id === 'chat-input') return; if (isAvatarEditorOpen) return; if (document.activeElement && ['pi-display-name','pi-username','avatar-name-input','custom-hex-input'].includes(document.activeElement.id)) return; if (isMobile && currentInputMode === 'mobile') { switchToPCControls(); return; } if (!isRunning && !isMenuOpen) return; const k = e.key.toLowerCase(); if (e.key === 'Escape') { e.preventDefault(); if (isMenuOpen) closePauseMenu(); else openPauseMenu(); return; } if (isMenuOpen) { if (k === 'l') triggerLeaveSequence(); if (k === 'r') triggerRespawnSequence(); if (e.key === 'Enter') { e.preventDefault(); if (document.getElementById('leave-confirmation-panel').style.display === 'flex') window.location.href = "https://roblox-devt.github.io/home/"; else if (document.getElementById('respawn-confirmation-panel').style.display === 'flex') triggerResetOrDeath('player'); } return; } if (e.key === 'Tab' && !checkPhone()) { e.preventDefault(); toggleLeaderboard(); } if (e.key === '`' && !checkPhone()) { e.preventDefault(); toggleInventory(); } if (e.key === '/' && !checkPhone() && document.activeElement.id !== 'chat-input') { e.preventDefault(); toggleChat(true, true); return; } if (e.key >= '0' && e.key <= '9') { let i = parseInt(e.key); if (i === 0) i = 9; else i -= 1; if (equippedSlot === i) { equippedSlot = -1; isHoldingItem = false; if (swordModel) swordModel.visible = false; } else if (playerInventory[i]) { equippedSlot = i; isHoldingItem = (playerInventory[i].id === 'sword'); if (swordModel) swordModel.visible = isHoldingItem; if (isHoldingItem && equipSound) equipSound.play(); } buildInventoryUI(); } if (e.key === 'Backspace') { e.preventDefault(); dropItem(); } if(k in moveKeys) moveKeys[k] = true; if(e.code==='Space') moveKeys.space=true; if (isDevMode) { if (k === 'f') { isFlyMode = !isFlyMode; if (isFlyMode) { playerVel.set(0, 0, 0); isCurrentlyClimbing = false; } else { charGroup.rotation.order = 'YXZ'; charGroup.rotation.x = 0; charGroup.rotation.z = 0; } } if (k === 'g') isInvincible = !isInvincible; if (k === 'q') wallNumbersVisible = !wallNumbersVisible; } if (k === 'i') zoomInKey = true; if (k === 'o') zoomOutKey = true; if (e.key === 'ArrowUp') { moveKeys.w = true; e.preventDefault(); } if (e.key === 'ArrowDown') { moveKeys.s = true; e.preventDefault(); } if (e.key === 'ArrowLeft') camLeftKey = true; if (e.key === 'ArrowRight') camRightKey = true; if(e.key === 'Shift') { if (isFlyMode) flyDown = true; else { if (!isShiftLockEnabled) return; isShiftLock = !isShiftLock; const b = document.getElementById('mobile-shiftlock'); if (b) { if (isShiftLock) b.classList.add('active'); else b.classList.remove('active'); } checkPointerLockNeeds(); } } });
+                window.addEventListener('keydown', (e) => { if (document.activeElement && document.activeElement.id === 'chat-input') return; if (isAvatarEditorOpen) return; if (document.activeElement && ['pi-display-name','pi-username','avatar-name-input','custom-hex-input'].includes(document.activeElement.id)) return; if (isMobile && currentInputMode === 'mobile') { switchToPCControls(); return; } if (!isRunning && !isMenuOpen) return; const k = e.key.toLowerCase(); if (e.key === 'Escape') { e.preventDefault(); if (isMenuOpen) closePauseMenu(); else openPauseMenu(); return; } if (isMenuOpen) { if (k === 'l') triggerLeaveSequence(); if (k === 'r') triggerRespawnSequence(); if (e.key === 'Enter') { e.preventDefault(); if (document.getElementById('leave-confirmation-panel').style.display === 'flex') window.location.href = "https://roblox-devt.github.io/home2/"; else if (document.getElementById('respawn-confirmation-panel').style.display === 'flex') triggerResetOrDeath('player'); } return; } if (e.key === 'Tab' && !checkPhone()) { e.preventDefault(); toggleLeaderboard(); } if (e.key === '`' && !checkPhone()) { e.preventDefault(); toggleInventory(); } if (e.key === '/' && !checkPhone() && document.activeElement.id !== 'chat-input') { e.preventDefault(); toggleChat(true, true); return; } if (e.key >= '0' && e.key <= '9') { let i = parseInt(e.key); if (i === 0) i = 9; else i -= 1; if (equippedSlot === i) { equippedSlot = -1; isHoldingItem = false; if (swordModel) swordModel.visible = false; } else if (playerInventory[i]) { equippedSlot = i; isHoldingItem = (playerInventory[i].id === 'sword'); if (swordModel) swordModel.visible = isHoldingItem; if (isHoldingItem && equipSound) equipSound.play(); } buildInventoryUI(); } if (e.key === 'Backspace') { e.preventDefault(); dropItem(); } if(k in moveKeys) moveKeys[k] = true; if(e.code==='Space') moveKeys.space=true; if (isDevMode) { if (k === 'f') { isFlyMode = !isFlyMode; if (isFlyMode) { playerVel.set(0, 0, 0); isCurrentlyClimbing = false; } else { charGroup.rotation.order = 'YXZ'; charGroup.rotation.x = 0; charGroup.rotation.z = 0; } } if (k === 'g') isInvincible = !isInvincible; if (k === 'q') wallNumbersVisible = !wallNumbersVisible; } if (k === 'i') zoomInKey = true; if (k === 'o') zoomOutKey = true; if (e.key === 'ArrowUp') { moveKeys.w = true; e.preventDefault(); } if (e.key === 'ArrowDown') { moveKeys.s = true; e.preventDefault(); } if (e.key === 'ArrowLeft') camLeftKey = true; if (e.key === 'ArrowRight') camRightKey = true; if(e.key === 'Shift') { if (isFlyMode) flyDown = true; else { if (!isShiftLockEnabled) return; isShiftLock = !isShiftLock; const b = document.getElementById('mobile-shiftlock'); if (b) { if (isShiftLock) b.classList.add('active'); else b.classList.remove('active'); } checkPointerLockNeeds(); } } });
                 window.addEventListener('keyup', (e) => { const k = e.key.toLowerCase(); if(k in moveKeys) moveKeys[k] = false; if(e.code==='Space') moveKeys.space=false; if(e.key === 'Shift') flyDown = false; if (k === 'i') zoomInKey = false; if (k === 'o') zoomOutKey = false; if (e.key === 'ArrowUp') moveKeys.w = false; if (e.key === 'ArrowDown') moveKeys.s = false; if (e.key === 'ArrowLeft') camLeftKey = false; if (e.key === 'ArrowRight') camRightKey = false; });
                 window.addEventListener('mousedown', (e) => { if (e.button === 2) { isRightMouseDown = true; checkPointerLockNeeds(); } if (e.button === 0 && isHoldingItem && !isMenuOpen && !isAvatarEditorOpen && !isDead && !document.getElementById('inventory').contains(e.target)) handleSwordClick(); });
                 window.addEventListener('mouseup', (e) => { if (e.button === 2) { isRightMouseDown = false; checkPointerLockNeeds(); } });
@@ -560,7 +639,37 @@
         function buildGraphicsInterface() { const c = document.getElementById('graphics-bars'); c.innerHTML = ''; for(let i=1; i<=10; i++) { const e = document.createElement('div'); e.className = 'volume-segment'; e.id = `gfx-seg-${i}`; e.addEventListener('click', () => { if (currentGraphicsMode === 'manual') { graphicsQuality = i; updateGraphicsVisuals(); localStorage.setItem('toh_gfxQual', graphicsQuality); } }); c.appendChild(e); } document.getElementById('graphics-mode-select').value = currentGraphicsMode; updateGraphicsVisuals(); }
         function getAutoGraphicsLevel() { if (isMobile) return 3; const c = navigator.hardwareConcurrency || 4; if (c >= 8) return 8; if (c >= 4) return 6; return 4; }
         function updateGraphicsVisuals() { const a = (currentGraphicsMode === 'auto'); const t = a ? getAutoGraphicsLevel() : graphicsQuality; for(let i=1; i<=10; i++) { const e = document.getElementById(`gfx-seg-${i}`); if(e) e.className = (!a && i <= t) ? 'volume-segment segment-active' : 'volume-segment segment-inactive'; } const m = document.getElementById('gfx-minus'), p = document.getElementById('gfx-plus'); if (m && p) { if (a) { m.style.opacity = '0.25'; m.style.pointerEvents = 'none'; p.style.opacity = '0.25'; p.style.pointerEvents = 'none'; } else { m.style.opacity = '1'; m.style.pointerEvents = 'auto'; p.style.opacity = '1'; p.style.pointerEvents = 'auto'; } } applyRenderGraphicsSettings(t); }
-        function applyRenderGraphicsSettings(l) { if (!renderer || !sun || !ambientLight) return; if (l === 1) { sun.castShadow = false; renderer.shadowMap.type = THREE.PCFShadowMap; ambientLight.intensity = 0.8; sun.intensity = 1.0; } else { sun.castShadow = true; let s = 512; if (l >= 8) s = 2048; else if (l >= 5) s = 1024; sun.shadow.mapSize.width = s; sun.shadow.mapSize.height = s; const d = 150; sun.shadow.camera.left = -d; sun.shadow.camera.right = d; sun.shadow.camera.top = d; sun.shadow.camera.bottom = -d; sun.shadow.camera.near = 0.5; sun.shadow.camera.far = 500; sun.shadow.bias = -0.0005; if (l >= 7) renderer.shadowMap.type = THREE.PCFSoftShadowMap; else renderer.shadowMap.type = THREE.PCFShadowMap; ambientLight.intensity = THREE.MathUtils.lerp(0.8, 0.5, (l - 1) / 9); sun.intensity = THREE.MathUtils.lerp(1.0, 1.4, (l - 1) / 9); } scene.traverse(o => { if (o.isMesh) { if (l > 1) { o.castShadow = o.userData.noShadow ? false : true; o.receiveShadow = true; } else { o.castShadow = false; o.receiveShadow = false; } if (o.material) o.material.needsUpdate = true; } }); renderer.shadowMap.needsUpdate = true; }
+        function applyRenderGraphicsSettings(l) { 
+            if (!renderer || !sun || !ambientLight) return; 
+            if (l === 1) { 
+                sun.castShadow = false; 
+                renderer.shadowMap.type = THREE.PCFShadowMap; 
+                ambientLight.intensity = 0.8; 
+                sun.intensity = 1.0; 
+            } else { 
+                sun.castShadow = true; 
+                let s = 512; 
+                if (l >= 8) s = 2048; 
+                else if (l >= 5) s = 1024; 
+                sun.shadow.mapSize.width = s; 
+                sun.shadow.mapSize.height = s; 
+                const d = 600; 
+                sun.shadow.camera.left = -d; 
+                sun.shadow.camera.right = d; 
+                sun.shadow.camera.top = d; 
+                sun.shadow.camera.bottom = -d; 
+                sun.shadow.camera.near = 0.5; 
+                sun.shadow.camera.far = 2000; 
+                sun.shadow.bias = -0.0005; 
+                sun.shadow.camera.updateProjectionMatrix(); 
+                if (l >= 7) renderer.shadowMap.type = THREE.PCFSoftShadowMap; 
+                else renderer.shadowMap.type = THREE.PCFShadowMap; 
+                ambientLight.intensity = THREE.MathUtils.lerp(0.8, 0.5, (l - 1) / 9); 
+                sun.intensity = THREE.MathUtils.lerp(1.0, 1.4, (l - 1) / 9); 
+            } 
+            scene.traverse(o => { if (o.isMesh) { if (l > 1) { o.castShadow = o.userData.noShadow ? false : true; o.receiveShadow = true; } else { o.castShadow = false; o.receiveShadow = false; } if (o.material) o.material.needsUpdate = true; } }); 
+            renderer.shadowMap.needsUpdate = true; 
+        }
         function buildCameraInterface() { const c = document.getElementById('camera-bars'); c.innerHTML = ''; for(let i=1; i<=10; i++) { const e = document.createElement('div'); e.className = 'volume-segment'; e.id = `cam-seg-${i}`; e.addEventListener('click', () => { cameraSensitivityBars = i; updateCameraSensitivityValue(); localStorage.setItem('toh_camSens', cameraSensitivityBars); }); c.appendChild(e); } updateCameraSensitivityValue(); }
         function updateCameraSensitivityValue() { if (cameraSensitivityBars === 5) cameraSensitivityValue = 1; else if (cameraSensitivityBars < 5) cameraSensitivityValue = 1 - (5 - cameraSensitivityBars) * 0.16; else cameraSensitivityValue = 1 + (cameraSensitivityBars - 5) * 0.6; cameraSensitivityValue = Math.round(cameraSensitivityValue * 100) / 100; const d = document.getElementById('cam-value-display'); if (d) d.innerText = cameraSensitivityValue; for(let i=1; i<=10; i++) { const e = document.getElementById(`cam-seg-${i}`); if(e) e.className = (i <= cameraSensitivityBars) ? 'volume-segment segment-active' : 'volume-segment segment-inactive'; } }
         function playOofSound() { if (audioVolume <= 0 || !deathAudio) return; const s = deathAudio.cloneNode(); s.volume = audioVolume / 10; s.play().catch(() => {}); }
@@ -571,12 +680,12 @@
         function setupTabs() { const t = ['playerinfo', 'audio', 'graphics', 'controls']; t.forEach(x => { const h = document.getElementById(`heading-${x}`); if (h) h.addEventListener('click', () => { t.forEach(y => { const h2 = document.getElementById(`heading-${y}`); const s = document.getElementById(`section-${y}`); if (h2) { if (y === x) { h2.style.color = '#ffffff'; h2.style.background = 'rgba(255,255,255,0.1)'; } else { h2.style.color = '#777777'; h2.style.background = 'transparent'; } } if (s) s.style.display = (y === x) ? 'block' : 'none'; }); }); }); }
         function populateMovementModeDropdown() { const m = document.getElementById('movement-mode-select'); if (currentInputMode === 'mobile') { m.innerHTML = `<option value="classic">Classic Thumbstick</option><option value="dynamic">Dynamic Thumbstick</option><option value="tap">Tap to Move</option>`; if (!['classic', 'dynamic', 'tap'].includes(currentMovementMode)) currentMovementMode = 'dynamic'; } else { m.innerHTML = `<option value="keyboard">Keyboard + Mouse</option><option value="tap">Click to Move</option>`; if (!['keyboard', 'tap'].includes(currentMovementMode)) currentMovementMode = 'keyboard'; } m.value = currentMovementMode; localStorage.setItem('toh_moveMode', currentMovementMode); }
         function animateMenuButton(o) { const s = document.querySelector('#roblox-menu-btn svg'); s.style.animation = 'none'; s.offsetHeight; s.style.animation = o ? 'spinGrow 0.4s ease forwards' : 'spinShrink 0.4s ease forwards'; }
-        function setupMenuLogic() { if(!isMobile) document.querySelectorAll('.desktop-shortcut').forEach(e => e.style.display = 'inline-block'); populateMovementModeDropdown(); document.getElementById('shiftlock-toggle').innerText = isShiftLockEnabled ? 'On' : 'Off'; document.getElementById('roblox-menu-btn').addEventListener('click', () => { if (isDead || !isRunning) return; if (isMenuOpen) closePauseMenu(); else openPauseMenu(); }); document.getElementById('menu-resume').addEventListener('click', closePauseMenu); document.getElementById('menu-respawn').addEventListener('click', triggerRespawnSequence); document.getElementById('menu-leave').addEventListener('click', triggerLeaveSequence); document.getElementById('vol-minus').addEventListener('click', () => { if(audioVolume > 1) { audioVolume--; updateVolumeVisuals(); updateSoundVolumes(); localStorage.setItem('toh_audio', audioVolume); } }); document.getElementById('vol-plus').addEventListener('click', () => { if(audioVolume < 10) { audioVolume++; updateVolumeVisuals(); updateSoundVolumes(); localStorage.setItem('toh_audio', audioVolume); } }); document.getElementById('graphics-mode-select').addEventListener('change', e => { currentGraphicsMode = e.target.value; updateGraphicsVisuals(); localStorage.setItem('toh_gfxMode', currentGraphicsMode); }); document.getElementById('gfx-minus').addEventListener('click', () => { if(currentGraphicsMode === 'manual' && graphicsQuality > 1) { graphicsQuality--; updateGraphicsVisuals(); localStorage.setItem('toh_gfxQual', graphicsQuality); } }); document.getElementById('gfx-plus').addEventListener('click', () => { if(currentGraphicsMode === 'manual' && graphicsQuality < 10) { graphicsQuality++; updateGraphicsVisuals(); localStorage.setItem('toh_gfxQual', graphicsQuality); } }); document.getElementById('cam-minus').addEventListener('click', () => { if(cameraSensitivityBars > 0) { cameraSensitivityBars--; updateCameraSensitivityValue(); localStorage.setItem('toh_camSens', cameraSensitivityBars); } }); document.getElementById('cam-plus').addEventListener('click', () => { if(cameraSensitivityBars < 10) { cameraSensitivityBars++; updateCameraSensitivityValue(); localStorage.setItem('toh_camSens', cameraSensitivityBars); } }); document.getElementById('movement-mode-select').addEventListener('change', e => { currentMovementMode = e.target.value; updateMovementModeUI(); localStorage.setItem('toh_moveMode', currentMovementMode); }); document.getElementById('shiftlock-toggle').addEventListener('click', () => { isShiftLockEnabled = !isShiftLockEnabled; document.getElementById('shiftlock-toggle').innerText = isShiftLockEnabled ? 'On' : 'Off'; localStorage.setItem('toh_shiftLockEnabled', isShiftLockEnabled); if (!isShiftLockEnabled) { isShiftLock = false; const b = document.getElementById('mobile-shiftlock'); if (b) b.classList.remove('active'); checkPointerLockNeeds(); } }); setupTabs(); renderColorPicker(); document.getElementById('pi-display-name').value = playerDisplayName; document.getElementById('pi-username').value = playerUsername; document.getElementById('pi-save-btn').addEventListener('click', savePlayerInfo); document.getElementById('confirm-leave-no').addEventListener('click', () => { document.getElementById('leave-confirmation-panel').style.display = 'none'; document.getElementById('pause-menu').classList.add('open'); }); document.getElementById('confirm-leave-yes').addEventListener('click', () => window.location.href = "https://roblox-devt.github.io/home/"); document.getElementById('confirm-respawn-no').addEventListener('click', () => { document.getElementById('respawn-confirmation-panel').style.display = 'none'; document.getElementById('pause-menu').classList.add('open'); }); document.getElementById('confirm-respawn-yes').addEventListener('click', () => triggerResetOrDeath('player')); document.getElementById('avatar-close-btn').addEventListener('click', closeAvatarEditor); document.getElementById('avatar-save-btn').addEventListener('click', saveAvatar); }
+        function setupMenuLogic() { if(!isMobile) document.querySelectorAll('.desktop-shortcut').forEach(e => e.style.display = 'inline-block'); populateMovementModeDropdown(); document.getElementById('shiftlock-toggle').innerText = isShiftLockEnabled ? 'On' : 'Off'; document.getElementById('roblox-menu-btn').addEventListener('click', () => { if (isDead || !isRunning) return; if (isMenuOpen) closePauseMenu(); else openPauseMenu(); }); document.getElementById('menu-resume').addEventListener('click', closePauseMenu); document.getElementById('menu-respawn').addEventListener('click', triggerRespawnSequence); document.getElementById('menu-leave').addEventListener('click', triggerLeaveSequence); document.getElementById('vol-minus').addEventListener('click', () => { if(audioVolume > 1) { audioVolume--; updateVolumeVisuals(); updateSoundVolumes(); localStorage.setItem('toh_audio', audioVolume); } }); document.getElementById('vol-plus').addEventListener('click', () => { if(audioVolume < 10) { audioVolume++; updateVolumeVisuals(); updateSoundVolumes(); localStorage.setItem('toh_audio', audioVolume); } }); document.getElementById('graphics-mode-select').addEventListener('change', e => { currentGraphicsMode = e.target.value; updateGraphicsVisuals(); localStorage.setItem('toh_gfxMode', currentGraphicsMode); }); document.getElementById('gfx-minus').addEventListener('click', () => { if(currentGraphicsMode === 'manual' && graphicsQuality > 1) { graphicsQuality--; updateGraphicsVisuals(); localStorage.setItem('toh_gfxQual', graphicsQuality); } }); document.getElementById('gfx-plus').addEventListener('click', () => { if(currentGraphicsMode === 'manual' && graphicsQuality < 10) { graphicsQuality++; updateGraphicsVisuals(); localStorage.setItem('toh_gfxQual', graphicsQuality); } }); document.getElementById('cam-minus').addEventListener('click', () => { if(cameraSensitivityBars > 0) { cameraSensitivityBars--; updateCameraSensitivityValue(); localStorage.setItem('toh_camSens', cameraSensitivityBars); } }); document.getElementById('cam-plus').addEventListener('click', () => { if(cameraSensitivityBars < 10) { cameraSensitivityBars++; updateCameraSensitivityValue(); localStorage.setItem('toh_camSens', cameraSensitivityBars); } }); document.getElementById('movement-mode-select').addEventListener('change', e => { currentMovementMode = e.target.value; updateMovementModeUI(); localStorage.setItem('toh_moveMode', currentMovementMode); }); document.getElementById('shiftlock-toggle').addEventListener('click', () => { isShiftLockEnabled = !isShiftLockEnabled; document.getElementById('shiftlock-toggle').innerText = isShiftLockEnabled ? 'On' : 'Off'; localStorage.setItem('toh_shiftLockEnabled', isShiftLockEnabled); if (!isShiftLockEnabled) { isShiftLock = false; const b = document.getElementById('mobile-shiftlock'); if (b) b.classList.remove('active'); checkPointerLockNeeds(); } }); setupTabs(); renderColorPicker(); document.getElementById('pi-display-name').value = playerDisplayName; document.getElementById('pi-username').value = playerUsername; document.getElementById('pi-save-btn').addEventListener('click', savePlayerInfo); document.getElementById('confirm-leave-no').addEventListener('click', () => { document.getElementById('leave-confirmation-panel').style.display = 'none'; document.getElementById('pause-menu').classList.add('open'); }); document.getElementById('confirm-leave-yes').addEventListener('click', () => window.location.href = "https://roblox-devt.github.io/home2/"); document.getElementById('confirm-respawn-no').addEventListener('click', () => { document.getElementById('respawn-confirmation-panel').style.display = 'none'; document.getElementById('pause-menu').classList.add('open'); }); document.getElementById('confirm-respawn-yes').addEventListener('click', () => triggerResetOrDeath('player')); document.getElementById('avatar-close-btn').addEventListener('click', closeAvatarEditor); document.getElementById('avatar-save-btn').addEventListener('click', saveAvatar); }
         function setupTopBarLogic() { micGreenRect = document.querySelector('#tb-btn-3 .mic-green'); const b1 = document.getElementById('tb-btn-1'), b2 = document.getElementById('tb-btn-2'), dd = document.getElementById('dropdown-menu'); b1.addEventListener('click', () => { const a = b1.classList.toggle('active'); if (a) dd.classList.add('visible'); else dd.classList.remove('visible'); }); b2.addEventListener('click', () => toggleChat(null, false)); document.getElementById('dd-avatar').addEventListener('click', () => { toggleAvatarEditor(); b1.classList.remove('active'); dd.classList.remove('visible'); }); document.getElementById('dd-leaderboard').addEventListener('click', () => { toggleLeaderboard(); b1.classList.remove('active'); dd.classList.remove('visible'); }); document.getElementById('lb-close-btn').addEventListener('click', () => document.getElementById('leaderboard').classList.remove('active')); document.getElementById('dd-inventory').addEventListener('click', () => { toggleInventory(); b1.classList.remove('active'); dd.classList.remove('visible'); }); document.getElementById('dd-respawn').addEventListener('click', () => { triggerRespawnSequence(); b1.classList.remove('active'); dd.classList.remove('visible'); }); document.getElementById('tb-btn-3').addEventListener('click', async e => { const b = e.currentTarget; if (!micActive) { try { microphoneStream = await navigator.mediaDevices.getUserMedia({ audio: true }); micAudioContext = new (window.AudioContext || window.webkitAudioContext)(); const s = micAudioContext.createMediaStreamSource(microphoneStream); micAnalyser = micAudioContext.createAnalyser(); micAnalyser.fftSize = 256; s.connect(micAnalyser); micDataArray = new Uint8Array(micAnalyser.frequencyBinCount); micActive = true; b.classList.add('active'); updateMicVisuals(); } catch (err) {} } else { if (microphoneStream) microphoneStream.getTracks().forEach(t => t.stop()); if (micAudioContext) await micAudioContext.close(); micActive = false; b.classList.remove('active'); micGreenRect.setAttribute('height', 0); micGreenRect.setAttribute('y', 14); } }); }
         function setupChatLogic() { const i = document.getElementById('chat-input'), s = document.getElementById('chat-send'); i.addEventListener('input', e => { if (e.target.value.trim() !== '') s.classList.add('active'); else s.classList.remove('active'); }); i.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); if (i.value.trim() === '') toggleChat(false); else sendChatMessage(); } else if (e.key === 'Escape') { e.preventDefault(); toggleChat(false); } }); s.addEventListener('click', sendChatMessage); }
         function toggleChat(force = null, focus = false) { const c = document.getElementById('chat-container'), i = document.getElementById('chat-input'), b2 = document.getElementById('tb-btn-2'), b1 = document.getElementById('tb-btn-1'), dd = document.getElementById('dropdown-menu'), p = checkPhone(); let a = force !== null ? force : !c.classList.contains('active'); if (!a) { c.classList.remove('active'); b2.classList.remove('active'); i.blur(); return; } if (dd.classList.contains('visible')) { dd.classList.remove('visible'); b1.classList.remove('active'); } c.classList.remove('desktop', 'phone'); void c.offsetWidth; if (p) { c.classList.add('phone'); i.placeholder = "Tap here to chat"; } else { c.classList.add('desktop'); i.placeholder = "To chat click here or press / key"; } c.classList.add('active'); b2.classList.add('active'); if (focus) setTimeout(() => i.focus(), 100); }
         function processChatCommand(m) { const l = m.toLowerCase(); if (l.startsWith(';')) { if (!isDevMode) return; const p = l.split(' '), c = p[0], a = p[1]; if (c === ';fly') { if (a && !isNaN(parseFloat(a))) { flySpeedMultiplier = parseFloat(a); isFlyMode = true; } else { isFlyMode = !isFlyMode; flySpeedMultiplier = 1; } if (isFlyMode) { playerVel.set(0, 0, 0); isCurrentlyClimbing = false; } else { charGroup.rotation.order = 'YXZ'; charGroup.rotation.x = 0; charGroup.rotation.z = 0; } } else if (c === ';unfly') { if (isFlyMode) { isFlyMode = false; charGroup.rotation.order = 'YXZ'; charGroup.rotation.x = 0; charGroup.rotation.z = 0; } } else if (c === ';god') isInvincible = !isInvincible; else if (c === ';ungod') isInvincible = false; } }
-        function sendChatMessage() { const i = document.getElementById('chat-input'), m = i.value.trim(); if (m !== '') { const c = document.getElementById('chat-messages'), d = document.createElement('div'); const sn = playerDisplayName.replace(/[<>&"]/g, x => ({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[x])); const sm = m.replace(/[<>&"]/g, x => ({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[x])); d.innerHTML = `<span class="chat-msg-user" style="color: ${chatTagColor};">[${sn}]:</span> ${sm}`; c.appendChild(d); if (m === "631463147178717") { isDevMode = true; const s = document.createElement('div'); s.innerHTML = '<span class="chat-msg-user" style="color: #ffaa00;">[System]:</span> Developer mode active'; c.appendChild(s); } processChatCommand(m); c.scrollTop = c.scrollHeight; i.value = ''; document.getElementById('chat-send').classList.remove('active'); } }
+        function sendChatMessage() { const i = document.getElementById('chat-input'), m = i.value.trim(); if (m !== '') { const c = document.getElementById('chat-messages'), d = document.createElement('div'); const sn = playerDisplayName.replace(/[<>&"]/g, x => ({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[x])); const sm = m.replace(/[<>&"]/g, x => ({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[x])); d.innerHTML = `<span class="chat-msg-user" style="color: ${chatTagColor};">[${sn}]:</span> ${sm}`; c.appendChild(d); processChatCommand(m); c.scrollTop = c.scrollHeight; i.value = ''; document.getElementById('chat-send').classList.remove('active'); } }
         function toggleLeaderboard() { const l = document.getElementById('leaderboard'), p = checkPhone(); if (l.classList.contains('active')) { l.classList.remove('active'); return; } l.classList.remove('desktop', 'phone', 'active'); void l.offsetWidth; if (p) l.classList.add('phone'); else l.classList.add('desktop'); l.classList.add('active'); updateLeaderboardName(); }
         function buildInventoryUI() { const c = document.getElementById('inventory'), s = document.getElementById('inv-slots'); let b = document.getElementById('inv-backpack'); if (!b) { b = document.createElement('div'); b.id = 'inv-backpack'; document.getElementById('inv-box').prepend(b); } const p = checkPhone(); s.innerHTML = ''; b.innerHTML = ''; playerBackpack = playerBackpack.filter(i => i !== null); c.classList.remove('phone', 'desktop'); c.classList.add(p ? 'phone' : 'desktop'); const a = c.classList.contains('active'); for (let i = 0; i < 10; i++) { const sl = createInventorySlot(i, 'hotbar', p); if (!a && !playerInventory[i]) sl.style.display = 'none'; s.appendChild(sl); } if (a) { playerBackpack.forEach((item, i) => { const sl = createInventorySlot(i, 'backpack', p); b.appendChild(sl); }); } }
         function createInventorySlot(i, t, p) { const s = document.createElement('div'); s.className = 'inv-slot'; s.dataset.type = t; s.dataset.index = i; const item = t === 'hotbar' ? playerInventory[i] : playerBackpack[i]; if (item) { const img = document.createElement('img'); img.src = item.icon; img.style.pointerEvents = 'none'; s.appendChild(img); } if (t === 'hotbar' && !p) { const n = document.createElement('span'); n.className = 'slot-num'; n.innerText = i === 9 ? '0' : (i + 1).toString(); s.appendChild(n); } if (equippedSlot === i && t === 'hotbar') s.classList.add('equipped'); const start = (x, y) => { if (!item) return; invDragData = { type: t, index: i, startX: x, startY: y, isDragging: false, clone: null }; }; s.addEventListener('mousedown', e => { e.preventDefault(); start(e.clientX, e.clientY); }); s.addEventListener('touchstart', e => { e.preventDefault(); const t = e.touches[0]; start(t.clientX, t.clientY); }, { passive: false }); return s; }
@@ -601,7 +710,7 @@
             n.respawnTimer = 5.0;
             n.debrisTimer = 3.0; 
             if (npcs.every(b => b.isDead)) {
-                npcs.forEach(b => b.respawnTimer = 5.0);
+                playerHealth = 100; 
             }
         }
         function ragdollCharacter(p) { let g, hv, vv, l = []; if (p) { g = charGroup; hv = playerHorizontalVel; vv = playerVel; l = [ { mesh: charHead, ext: new THREE.Vector3(0.6, 0.6, 0.6), isHead: true }, { mesh: charTorso, ext: new THREE.Vector3(1.0, 1.0, 0.5) }, { mesh: pL_Arm.children[0], ext: new THREE.Vector3(0.5, 1.0, 0.5) }, { mesh: pR_Arm.children[0], ext: new THREE.Vector3(0.5, 1.0, 0.5) }, { mesh: pL_Leg.children[0], ext: new THREE.Vector3(0.5, 1.0, 0.5) }, { mesh: pR_Leg.children[0], ext: new THREE.Vector3(0.5, 1.0, 0.5) } ]; } g.updateMatrixWorld(true); g.visible = false; const d = []; l.forEach(i => { const wp = new THREE.Vector3(), wq = new THREE.Quaternion(); i.mesh.getWorldPosition(wp); i.mesh.getWorldQuaternion(wq); const m = i.mesh.clone(); m.position.copy(wp); m.quaternion.copy(wq); scene.add(m); const v = new THREE.Vector3(hv.x, vv.y, hv.z); v.add(new THREE.Vector3((Math.random() - 0.5) * 6, Math.random() * 8 + 4, (Math.random() - 0.5) * 6)); const av = new THREE.Vector3((Math.random() - 0.5) * 12, (Math.random() - 0.5) * 12, (Math.random() - 0.5) * 12); const md = Math.max(i.ext.x, i.ext.y, i.ext.z); d.push({ mesh: m, vel: v, angularVel: av, ext: i.ext, radius: md, isHead: i.isHead }); }); if (p) activeDebris = d; }
@@ -620,23 +729,11 @@
             isForcefieldActive = true; forcefieldMoveTimer = 0; forcefieldFade = 0;
             playerInventory[0] = { id: 'sword', name: 'Sword', icon: 'https://tr.rbxcdn.com/180DAY-e39f79dce4937ea8598d4a5a793a0da0/420/420/Gear/Webp/noFilter' };
             equippedSlot = -1; isHoldingItem = false; if (swordModel) swordModel.visible = false; buildInventoryUI();
-            playerLastHitState = '';
-
+            
             let spawnBase = new THREE.Vector3(0, 7.625, 0);
             npcs.forEach((n, i) => {
-                n.debris.forEach(item => scene.remove(item.mesh)); n.debris = [];
-                let angle = (i / npcs.length) * Math.PI * 2;
-                let radius = 2.0;
-                n.pos.set(spawnBase.x + Math.cos(angle) * radius, spawnBase.y, spawnBase.z + Math.sin(angle) * radius);
-                n.vel.set(0, 0, 0); n.horizontalVel.set(0, 0, 0);
-                n.health = 100; n.isDead = false; n.group.visible = true;
-                n.state = 'FOLLOW'; n.stateTimer = 0; n.attackTimer = 0; n.retreatTimer = 0;
-                n.strafeDir = Math.random() > 0.5 ? 1 : -1; n.lungeTimer = 0; n.lastHitState = '';
-                n.leftLeg.rotation.set(0,0,0); n.rightLeg.rotation.set(0,0,0);
-                n.leftArm.rotation.set(0,0,0); n.rightArm.rotation.set(0,0,0);
-                n.torso.rotation.set(0,0,0); n.head.rotation.set(0,0,0);
-                n.forcefieldActive = false; n.forcefieldFade = 0; n.forcefieldMoveTimer = 0;
-                n.attackTargetPos.set(0,0,0);
+                respawnNPC(n);
+                playEquipSoundForNPC(i * 250);
             });
         }
         function respawnNPC(n) {
@@ -647,12 +744,15 @@
             n.vel.set(0, 0, 0); n.horizontalVel.set(0, 0, 0);
             n.health = 100; n.isDead = false; n.group.visible = true;
             n.state = 'FOLLOW'; n.stateTimer = 0; n.attackTimer = 0; n.retreatTimer = 0;
-            n.strafeDir = Math.random() > 0.5 ? 1 : -1; n.lungeTimer = 0; n.lastHitState = '';
+            n.strafeDir = Math.random() > 0.5 ? 1 : -1; n.lungeTimer = 0; 
             n.leftLeg.rotation.set(0,0,0); n.rightLeg.rotation.set(0,0,0);
             n.leftArm.rotation.set(0,0,0); n.rightArm.rotation.set(0,0,0);
             n.torso.rotation.set(0,0,0); n.head.rotation.set(0,0,0);
             n.forcefieldActive = false; n.forcefieldFade = 0; n.forcefieldMoveTimer = 0;
             n.attackTargetPos.set(0,0,0);
+            n.respawnTimer = 5.0;
+            n.playerHitState = '';
+            n.lastHitState = '';
         }
         const debrisRay = new THREE.Raycaster();
         function updateDebrisPhysics(dt, d) { const g = GRAVITY, dn = new THREE.Vector3(0, -1, 0); for (let i = 0; i < d.length; i++) { const b = d[i]; if (!b.mesh) continue; b.mesh.updateMatrixWorld(true); b.vel.y -= g * dt; b.mesh.position.addScaledVector(b.vel, dt); b.mesh.rotation.x += b.angularVel.x * dt; b.mesh.rotation.y += b.angularVel.y * dt; b.mesh.rotation.z += b.angularVel.z * dt; const r = new THREE.Matrix4().extractRotation(b.mesh.matrixWorld); const ux = new THREE.Vector3(1, 0, 0).applyMatrix4(r), uy = new THREE.Vector3(0, 1, 0).applyMatrix4(r), uz = new THREE.Vector3(0, 0, 1).applyMatrix4(r); const vh = Math.abs(ux.y) * b.ext.x + Math.abs(uy.y) * b.ext.y + Math.abs(uz.y) * b.ext.z; debrisRay.set(b.mesh.position, dn); debrisRay.far = 1000; const hits = debrisRay.intersectObjects(collisionObjs); let gy = -Infinity; if (hits.length > 0) gy = hits[0].point.y; if (b.mesh.position.y <= gy + vh) { b.mesh.position.y = gy + vh; if (Math.abs(b.vel.y) > 0.8) b.vel.y = -b.vel.y * 0.25; else b.vel.y = 0; b.vel.x *= 0.88; b.vel.z *= 0.88; const ls = b.vel.length(); if (ls < 6.0) { b.angularVel.multiplyScalar(0.75); const ax = [ux, uy, uz]; let md = -1, ba = null; ax.forEach(a => { const dot = Math.abs(a.y); if (dot > md) { md = dot; ba = a; } }); if (ba) { const tu = new THREE.Vector3(0, ba.y >= 0 ? 1 : -1, 0); const qs = new THREE.Quaternion().setFromUnitVectors(ba.clone().normalize(), tu); b.mesh.quaternion.slerp(qs.multiply(b.mesh.quaternion), dt * 10); } } else b.angularVel.multiplyScalar(0.92); } for (let j = i + 1; j < d.length; j++) { const b2 = d[j]; const df = new THREE.Vector3().subVectors(b.mesh.position, b2.mesh.position); const dist = df.length(); const md = b.radius + b2.radius; if (dist < md && dist > 0.0001) { const n = df.normalize(); const o = md - dist; b.mesh.position.addScaledVector(n, o * 0.5); b2.mesh.position.addScaledVector(n, -o * 0.5); const rv = new THREE.Vector3().subVectors(b.vel, b2.vel); const vn = rv.dot(n); if (vn < 0) { const imp = -1.4 * vn * 0.5; b.vel.addScaledVector(n, imp); b2.vel.addScaledVector(n, -imp); b.angularVel.add(new THREE.Vector3((Math.random()-0.5)*4, (Math.random()-0.5)*4, (Math.random()-0.5)*4)); b2.angularVel.add(new THREE.Vector3((Math.random()-0.5)*4, (Math.random()-0.5)*4, (Math.random()-0.5)*4)); } } } } }
@@ -707,8 +807,8 @@
             const g = new THREE.Group(); 
             const hM = new THREE.MeshStandardMaterial({ color: 0xfff700, roughness: 0.6 }); 
             const aM = new THREE.MeshStandardMaterial({ color: 0xfff700, roughness: 0.6 }); 
-            const tM = new THREE.MeshStandardMaterial({ color: 0x0077ff, roughness: 0.6 }); 
-            const lM = new THREE.MeshStandardMaterial({ color: 0x017a2c, roughness: 0.6 }); 
+            const tM = new THREE.MeshStandardMaterial({ color: 0x1760ff, roughness: 0.6 }); 
+            const lM = new THREE.MeshStandardMaterial({ color: 0x00b009, roughness: 0.6 }); 
             const h = new THREE.Mesh(makeBeveledCylinder(0.6, 1.2, 0.3, 32, 8), hM); h.position.y = 4.5; h.castShadow = true; h.receiveShadow = true; g.add(h); 
             const fG = new THREE.CylinderGeometry(0.6 + 0.005, 0.6 + 0.005, 1.2 - 0.1, 32, 1, true, Math.PI * 1.65, Math.PI * 0.7); 
             const l = new THREE.TextureLoader(); l.crossOrigin = "Anonymous"; 
@@ -731,7 +831,7 @@
                 pos: pos.clone(), vel: new THREE.Vector3(), horizontalVel: new THREE.Vector3(), yaw: 0, isGrounded: true, isDead: false, health: 100,
                 swordHitCooldown: false, swordSwingTime: 0, swordSwingDuration: 0, swordSwingType: '', forcefieldActive: true, forcefieldFade: 0, forcefieldMoveTimer: 0,
                 state: 'FOLLOW', stateTimer: 0, attackTimer: 0, retreatTimer: 0, strafeDir: Math.random() > 0.5 ? 1 : -1, lungeTimer: 0, animTimer: Math.random() * 10,
-                debris: [], respawnTimer: 0, debrisTimer: 0, lastHitState: '', attackTargetPos: new THREE.Vector3(), attackChainCount: 0, pausedNext: null
+                debris: [], respawnTimer: 0, debrisTimer: 0, lastHitState: '', playerHitState: '', attackTargetPos: new THREE.Vector3(), attackChainCount: 0, pausedNext: null
             });
         }
         function updateNPC(dt, n) {
@@ -746,11 +846,7 @@
                         updateDebrisPhysics(dt, n.debris);
                     }
                 }
-                if (npcs.every(b => b.isDead)) {
-                    n.respawnTimer -= dt;
-                    if (n.respawnTimer <= 0) respawnNPC(n);
-                }
-                return;
+                return; 
             }
             
             n.group.updateMatrixWorld(true); 
@@ -789,8 +885,25 @@
                         n.horizontalVel.set(0, 0, 0);
                     } else if (n.state === 'FOLLOW') {
                         if (dist <= SAFE_DIST) {
-                            n.state = 'MIRROR'; n.stateTimer = minMirror + Math.random() * (maxMirror - minMirror);
-                            n.strafeDir = Math.random() > 0.5 ? 1 : -1;
+                            let pVel = playerHorizontalVel.clone();
+                            let isMoving = pVel.length() > 0.1;
+                            let movingTowards = false;
+                            if (isMoving) {
+                                pVel.normalize();
+                                movingTowards = pVel.dot(dir) > 0.5;
+                            }
+                            
+                            if (isMoving && movingTowards) {
+                                if (gamePaused) { n.state = 'PAUSED'; n.pausedNext = 'ATTACK'; return; }
+                                n.state = 'ATTACK'; 
+                                n.attackTimer = 0;
+                                n.retreatTimer = 0;
+                                n.attackChainCount = 0;
+                                n.attackTargetPos = tp.clone();
+                            } else {
+                                n.state = 'MIRROR'; n.stateTimer = minMirror + Math.random() * (maxMirror - minMirror);
+                                n.strafeDir = Math.random() > 0.5 ? 1 : -1;
+                            }
                         } else {
                             n.horizontalVel.copy(dir).multiplyScalar(16); 
                             let ad = tYaw - n.yaw; while (ad < -Math.PI) ad += Math.PI * 2; while (ad > Math.PI) ad -= Math.PI * 2; n.yaw += ad * 0.15;
@@ -798,49 +911,56 @@
                     } else if (n.state === 'MIRROR') {
                         n.yaw = tYaw; 
                         n.stateTimer -= dt;
-                        if (n.stateTimer <= 0) {
+                        
+                        let pVel = playerHorizontalVel.clone();
+                        let isMoving = pVel.length() > 0.1;
+                        let movingTowards = false;
+                        if (isMoving) {
+                            pVel.normalize();
+                            movingTowards = pVel.dot(dir) > 0.5;
+                        }
+                        
+                        if (isMoving && movingTowards) {
+                            if (gamePaused) { n.state = 'PAUSED'; n.pausedNext = 'ATTACK'; return; }
+                            n.state = 'ATTACK'; 
+                            n.attackTimer = 0;
+                            n.retreatTimer = 0;
+                            n.attackChainCount = 0;
+                            n.attackTargetPos = tp.clone();
+                        } else if (n.stateTimer <= 0) {
                             if (gamePaused) { n.state = 'PAUSED'; n.pausedNext = 'ATTACK'; return; }
                             
-                            let isFocusAttack = gameLevel >= 14 && Math.random() < 0.25;
+                            n.state = 'ATTACK'; 
+                            n.attackTimer = 0;
+                            n.retreatTimer = 0;
+                            n.attackChainCount = 0;
                             
-                            if (isFocusAttack) {
-                                n.state = 'FOCUS_ATTACK'; 
-                                n.attackTimer = 0;
-                                n.retreatTimer = 0;
-                                n.attackChainCount = 0;
+                            let pVel2 = playerHorizontalVel.clone();
+                            let isMoving2 = pVel2.length() > 0.1;
+                            if (isMoving2) pVel2.normalize();
+                            let movingTowards2 = isMoving2 && dir.dot(pVel2) > 0.5;
+                            
+                            if (gameLevel >= 14) {
+                                if (isMoving2) {
+                                    let timeToReach = dist / 16.0;
+                                    n.attackTargetPos = tp.clone().addScaledVector(playerHorizontalVel, timeToReach);
+                                } else {
+                                    n.attackTargetPos = tp.clone();
+                                }
                             } else {
-                                n.state = 'ATTACK'; 
-                                n.attackTimer = 0;
-                                n.retreatTimer = 0;
-                                n.attackChainCount = 0;
-                                
-                                let pVel = playerHorizontalVel.clone();
-                                let isMoving = pVel.length() > 0.1;
-                                if (isMoving) pVel.normalize();
-                                let movingTowards = isMoving && dir.dot(pVel) > 0.5;
-                                
-                                if (gameLevel >= 14) {
-                                    if (isMoving) {
+                                if (movingTowards2) {
+                                    n.attackTargetPos = tp.clone();
+                                } else {
+                                    if (Math.random() < 0.5 || !isMoving2) {
+                                        n.attackTargetPos = tp.clone();
+                                    } else {
                                         let timeToReach = dist / 16.0;
                                         n.attackTargetPos = tp.clone().addScaledVector(playerHorizontalVel, timeToReach);
-                                    } else {
-                                        n.attackTargetPos = tp.clone();
-                                    }
-                                } else {
-                                    if (movingTowards) {
-                                        n.attackTargetPos = tp.clone();
-                                    } else {
-                                        if (Math.random() < 0.5 || !isMoving) {
-                                            n.attackTargetPos = tp.clone();
-                                        } else {
-                                            let timeToReach = dist / 16.0;
-                                            n.attackTargetPos = tp.clone().addScaledVector(playerHorizontalVel, timeToReach);
-                                        }
                                     }
                                 }
-                                
-                                if (Math.random() < 0.5 && n.isGrounded) n.vel.y = 62.6; 
                             }
+                            
+                            if (Math.random() < 0.5 && n.isGrounded) n.vel.y = 62.6; 
                         } else {
                             let rv = new THREE.Vector3().subVectors(n.pos, tp).setY(0);
                             let cd = rv.length(); if (cd < 0.1) rv.set(1, 0, 0); else rv.normalize();
@@ -860,64 +980,6 @@
                                 if (md.length() > 0) md.normalize();
                                 n.horizontalVel.copy(md).multiplyScalar(16); 
                             }
-                        }
-                    } else if (n.state === 'FOCUS_ATTACK') {
-                        n.attackTimer += dt;
-                        
-                        let pVel = playerHorizontalVel.clone();
-                        let isMoving = pVel.length() > 0.1;
-                        let movingTowards = false;
-                        if (isMoving) {
-                            pVel.normalize();
-                            movingTowards = dir.dot(pVel) > 0.5;
-                        }
-                        
-                        if (n.attackTimer > 3.0) {
-                            n.state = 'MIRROR'; n.stateTimer = minMirror + Math.random() * (maxMirror - minMirror); n.strafeDir = Math.random() > 0.5 ? 1 : -1;
-                            return;
-                        }
-                        
-                        if (isMoving && !movingTowards) {
-                            if (dist > SAFE_DIST) { n.state = 'FOLLOW'; n.stateTimer = 0; }
-                            else { n.state = 'MIRROR'; n.stateTimer = minMirror + Math.random() * (maxMirror - minMirror); n.strafeDir = Math.random() > 0.5 ? 1 : -1; }
-                            return;
-                        }
-                        
-                        if (movingTowards) {
-                            n.horizontalVel.set(0, 0, 0);
-                            n.yaw = tYaw;
-                            n.lungeTimer -= dt;
-                            if (n.lungeTimer <= 0) {
-                                n.swordSwingType = 'double'; n.swordSwingDuration = 0.5; n.swordSwingTime = 0.5;
-                                n.lungeTimer = 0.2; 
-                                if (lungeSound) lungeSound.play();
-                                n.state = 'MIRROR'; n.stateTimer = minMirror + Math.random() * (maxMirror - minMirror); n.strafeDir = Math.random() > 0.5 ? 1 : -1;
-                            }
-                            return;
-                        }
-                        
-                        n.attackTargetPos = tp.clone();
-                        let md = new THREE.Vector3().subVectors(n.attackTargetPos, n.pos).setY(0);
-                        let mdLen = md.length();
-                        
-                        if (dist <= 3.5) {
-                            n.state = 'RETREAT'; n.retreatTimer = 0;
-                            return;
-                        }
-                        
-                        if (mdLen > 0.1) {
-                            md.normalize();
-                            n.horizontalVel.copy(md).multiplyScalar(16); 
-                        } else {
-                            n.horizontalVel.set(0,0,0);
-                        }
-                        n.yaw = tYaw; 
-                        
-                        n.lungeTimer -= dt;
-                        if (n.lungeTimer <= 0) {
-                            n.swordSwingType = 'double'; n.swordSwingDuration = 0.5; n.swordSwingTime = 0.5;
-                            n.lungeTimer = 0.2; 
-                            if (lungeSound) lungeSound.play();
                         }
                     } else if (n.state === 'ATTACK') {
                         n.attackTimer += dt;
@@ -966,19 +1028,52 @@
                                 n.retreatTimer = 0;
                             }
                         } else {
-                            md.normalize();
-                            n.horizontalVel.copy(md).multiplyScalar(16); 
+                            let pVel = playerHorizontalVel.clone();
+                            let isMoving = pVel.length() > 0.1;
+                            let movingTowards = false;
+                            if (isMoving) {
+                                pVel.normalize();
+                                movingTowards = pVel.dot(dir) > 0.5;
+                            }
                             
-                            if (gameLevel >= 14) {
-                                let targetAttackYaw = Math.atan2(n.attackTargetPos.x - n.pos.x, n.attackTargetPos.z - n.pos.z);
-                                let playerYaw = Math.atan2(tp.x - n.pos.x, tp.z - n.pos.z);
-                                let diff = playerYaw - targetAttackYaw;
-                                while (diff < -Math.PI) diff += Math.PI * 2;
-                                while (diff > Math.PI) diff -= Math.PI * 2;
-                                diff = THREE.MathUtils.clamp(diff, -0.2618, 0.2618); // 15 degrees
-                                n.yaw = targetAttackYaw + diff;
+                            if (isMoving && movingTowards) {
+                                // Override: Straight line attack, no matter the mode/level
+                                let mdStraight = new THREE.Vector3().subVectors(tp, n.pos).setY(0);
+                                if (mdStraight.length() > 0.1) mdStraight.normalize();
+                                n.horizontalVel.copy(mdStraight).multiplyScalar(16); 
+                                n.yaw = Math.atan2(mdStraight.x, mdStraight.z);
+                                n.attackTargetPos.copy(tp);
+                            } else if (gameMode === 'Focus') {
+                                let timeToReach = dist / 16.0;
+                                let dynamicTargetPos = tp.clone().addScaledVector(playerHorizontalVel, timeToReach);
+                                
+                                let desiredDir = new THREE.Vector3().subVectors(dynamicTargetPos, n.pos).setY(0);
+                                if (desiredDir.length() > 0.1) desiredDir.normalize();
+                                let desiredVel = desiredDir.multiplyScalar(16);
+                                n.horizontalVel.lerp(desiredVel, 0.2); 
+                                
+                                let dynamicYaw = Math.atan2(desiredDir.x, desiredDir.z);
+                                let yawDiff = dynamicYaw - n.yaw;
+                                while (yawDiff < -Math.PI) yawDiff += Math.PI * 2;
+                                while (yawDiff > Math.PI) yawDiff -= Math.PI * 2;
+                                n.yaw += yawDiff * 0.2; 
+                                
+                                n.attackTargetPos.copy(dynamicTargetPos);
                             } else {
-                                n.yaw = Math.atan2(n.attackTargetPos.x - n.pos.x, n.attackTargetPos.z - n.pos.z);
+                                md.normalize();
+                                n.horizontalVel.copy(md).multiplyScalar(16); 
+                                
+                                if (gameLevel >= 14) {
+                                    let targetAttackYaw = Math.atan2(n.attackTargetPos.x - n.pos.x, n.attackTargetPos.z - n.pos.z);
+                                    let playerYaw = Math.atan2(tp.x - n.pos.x, tp.z - n.pos.z);
+                                    let diff = playerYaw - targetAttackYaw;
+                                    while (diff < -Math.PI) diff += Math.PI * 2;
+                                    while (diff > Math.PI) diff -= Math.PI * 2;
+                                    diff = THREE.MathUtils.clamp(diff, -0.2618, 0.2618); 
+                                    n.yaw = targetAttackYaw + diff;
+                                } else {
+                                    n.yaw = Math.atan2(n.attackTargetPos.x - n.pos.x, n.attackTargetPos.z - n.pos.z);
+                                }
                             }
                             
                             n.lungeTimer -= dt;
@@ -1075,26 +1170,18 @@
             let aimArm = n.rightArm;
             if (n.swordSwingTime > 0) { 
                 n.swordSwingTime -= dt; 
-                let p = 1.0 - (n.swordSwingTime / n.swordSwingDuration); 
+                let progress = 1.0 - (n.swordSwingTime / n.swordSwingDuration); 
                 if (n.swordSwingType === 'single') { 
-                    if (p < 0.5) aimArm.rotation.x = THREE.MathUtils.lerp(-Math.PI / 2, 0, p / 0.5); 
-                    else aimArm.rotation.x = THREE.MathUtils.lerp(0, -Math.PI / 2, (p - 0.5) / 0.5); 
+                    if (progress < 0.5) { let p = progress / 0.5; aimArm.rotation.x = THREE.MathUtils.lerp(-Math.PI / 2, 0, p); } 
+                    else { let p = (progress - 0.5) / 0.5; aimArm.rotation.x = THREE.MathUtils.lerp(0, -Math.PI / 2, p); } 
                     if (n.sword) n.sword.rotation.set(-Math.PI / 2, 0, Math.PI); 
                 } else if (n.swordSwingType === 'double') { 
                     aimArm.rotation.x = -Math.PI / 2; 
                     if (n.sword) n.sword.rotation.set(0, 0, Math.PI); 
                 } 
-            } else {
-                aimArm.rotation.x = -Math.PI / 2;
+            } else { 
+                aimArm.rotation.x = -Math.PI / 2; 
                 if (n.sword) n.sword.rotation.set(-Math.PI / 2, 0, Math.PI); 
-            }
-
-            if ((n.state === 'ATTACK' || n.state === 'FOCUS_ATTACK') && !n.isDead) {
-                let aw = new THREE.Vector3(); aimArm.getWorldPosition(aw);
-                let dy = tp.y - aw.y, dx = tp.x - aw.x, dz = tp.z - aw.z;
-                let dH = Math.sqrt(dx*dx + dz*dz);
-                let pA = Math.atan2(dy, dH);
-                aimArm.rotation.x = -Math.PI / 2 - pA;
             }
 
             if (n.horizontalVel.length() > 0.1) { 
@@ -1120,6 +1207,9 @@
         function checkSwordDamage() {
             if (!isHoldingItem || !swordModel || !swordModel.visible) return;
             swordModel.updateMatrixWorld(true);
+            let attackerState = swordSwingTime > 0 ? swordSwingType : 'normal';
+            let damage = attackerState === 'normal' ? 5 : (attackerState === 'single' ? 10 : 30);
+            
             npcs.forEach(n => {
                 if (n.isDead || n.forcefieldActive) return;
                 let targetTorso = n.torso;
@@ -1140,17 +1230,14 @@
                 _closestPoint.copy(_hilt).addScaledVector(_lineVec, t);
                 const dist = _closestPoint.distanceTo(_targetPos);
                 
-                let attackerState = swordSwingTime > 0 ? swordSwingType : 'normal';
-                let damage = attackerState === 'normal' ? 5 : (attackerState === 'single' ? 10 : 30);
-                
                 if (dist < 2.0) { 
-                    if (playerLastHitState !== attackerState) {
+                    if (n.playerHitState !== attackerState) {
                         n.health = Math.max(0, n.health - damage); 
                         if (n.health <= 0) triggerNPCDeath(n);
-                        playerLastHitState = attackerState;
+                        n.playerHitState = attackerState;
                     }
                 } else if (dist > 3.5) { 
-                    playerLastHitState = '';
+                    n.playerHitState = '';
                 }
             });
         }
@@ -1217,6 +1304,17 @@
             if (camRightKey) camYaw -= 1.5 * dt;
             
             if (isDead) { updateDebrisPhysics(dt, activeDebris); respawnTimer -= dt; if (respawnTimer <= 0) respawnCharacter(); } 
+
+            if (npcs.length > 0 && npcs.every(b => b.isDead)) {
+                npcs[0].respawnTimer -= dt;
+                if (npcs[0].respawnTimer <= 0) {
+                    for(let i=0; i<npcs.length; i++) {
+                        respawnNPC(npcs[i]);
+                        playEquipSoundForNPC(i * 250);
+                    }
+                    playerHealth = 100; 
+                }
+            }
             
             for (let i = droppedItems.length - 1; i >= 0; i--) { 
                 const d = droppedItems[i]; d.mesh.updateMatrixWorld(true); d.vel.y -= 100 * dt; d.mesh.position.addScaledVector(d.vel, dt); d.mesh.rotation.x += d.rotVel.x * dt; d.mesh.rotation.y += d.rotVel.y * dt; d.mesh.rotation.z += d.rotVel.z * dt; 
