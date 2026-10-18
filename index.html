@@ -406,6 +406,10 @@
         /* PHONE ONLY: shrink the tab strip and move Leave/Respawn/Resume to the TOP,
            directly under the tabs (flexbox order re-arranges the children without
            touching the HTML), so the buttons are always reachable. */
+        @media (max-height: 480px) and (pointer: coarse) {
+            #pause-menu { width: 84%; max-width: 400px; height: 440px; padding: 10px; transform: translate(-50%, -50%) scale(0.72); }
+            #pause-menu.open { transform: translate(-50%, -50%) scale(0.8); }
+        }
         @media (max-width: 600px) {
             #pause-menu .menu-tab-strip { order: 1; gap: 18px; margin-bottom: 10px; }
             #pause-menu .menu-tab-btn { font-size: 14px; padding: 9px 2px; gap: 6px; }
