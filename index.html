@@ -393,9 +393,15 @@
             display: flex; transform: translate(-50%, -50%) scale(1); opacity: 1;
         }
         @media (max-width: 600px) {
-            #pause-menu { width: 84%; max-width: 400px; height: 440px; padding: 10px; }
+            /* PHONE: the entire pause menu renders at 0.8x scale. translate(-50%,-50%)
+               centers the box first, then scale() shrinks it around its center - so the
+               scaled menu can never extend past a short screen. The closed state uses
+               0.9 x 0.8 = 0.72 so the open/close "pop" animation still feels identical. */
+            #pause-menu { width: 84%; max-width: 400px; height: 440px; padding: 10px; transform: translate(-50%, -50%) scale(0.72); }
+            #pause-menu.open { transform: translate(-50%, -50%) scale(0.8); }
             #avatar-editor-menu { width: 90%; max-width: 500px; height: 400px; padding: 15px; }
             #avatar-naming-modal { width: 90%; max-width: 340px; height: auto; }
+        }
         }
         /* PHONE ONLY: shrink the tab strip and move Leave/Respawn/Resume to the TOP,
            directly under the tabs (flexbox order re-arranges the children without
