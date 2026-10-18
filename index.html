@@ -410,6 +410,19 @@
             #pause-menu { width: 84%; max-width: 400px; height: 440px; padding: 10px; transform: translate(-50%, -50%) scale(0.72); }
             #pause-menu.open { transform: translate(-50%, -50%) scale(0.8); }
         }
+        /* PHONE UI (body.phone-ui, toggled by JS via checkPhone()): applies in BOTH
+           portrait and landscape - width-based media queries miss landscape phones.
+           The whole menu renders at 0.8x: translate centers first, scale shrinks
+           around the center, so it can never extend past the screen. */
+        body.phone-ui #pause-menu { width: 84%; max-width: 400px; height: min(440px, 96vh); padding: 10px; transform: translate(-50%, -50%) scale(0.72); }
+        body.phone-ui #pause-menu.open { transform: translate(-50%, -50%) scale(0.8); }
+        body.phone-ui #avatar-editor-menu { width: 90%; max-width: 500px; height: 400px; padding: 15px; }
+        body.phone-ui #avatar-naming-modal { width: 90%; max-width: 340px; height: auto; }
+        body.phone-ui #pause-menu .menu-tab-strip { order: 1; gap: 18px; margin-bottom: 10px; }
+        body.phone-ui #pause-menu .menu-tab-btn { font-size: 14px; padding: 9px 2px; gap: 6px; }
+        body.phone-ui #pause-menu .menu-btn-container { order: 2; margin-top: 0; margin-bottom: 10px; gap: 8px; }
+        body.phone-ui #pause-menu .menu-row-btn { height: 42px; font-size: 14px; }
+        body.phone-ui #pause-menu .menu-scroll-area { order: 3; }
         @media (max-width: 600px) {
             #pause-menu .menu-tab-strip { order: 1; gap: 18px; margin-bottom: 10px; }
             #pause-menu .menu-tab-btn { font-size: 14px; padding: 9px 2px; gap: 6px; }
@@ -1582,6 +1595,12 @@
         function checkPhone() {
             return /iPhone|iPod|Android.*Mobile/i.test(navigator.userAgent) || (isMobile && Math.min(window.innerWidth, window.innerHeight) < 600);
         }
+        // Phone UI class: the SAME detection the inventory/chat/leaderboard use, applied
+        // to <body> so phone CSS rules work in BOTH orientations. Re-applied on every
+        // resize/orientation change.
+        function updatePhoneUIClass() {
+            document.body.classList.toggle('phone-ui', checkPhone());
+        }
 
         function loadPlayerInfo() {
             const savedName = localStorage.getItem('toh_displayName');
@@ -1989,6 +2008,7 @@
             try {
                 loadSettings();
                 loadPlayerInfo();
+                updatePhoneUIClass();
                 setupSoundObjects();
                 
                 scene = new THREE.Scene();
@@ -2071,6 +2091,7 @@
                 }, 2000);
 
                 window.addEventListener('resize', () => {
+                    updatePhoneUIClass();
                     camera.aspect = window.innerWidth / window.innerHeight;
                     camera.updateProjectionMatrix();
                     renderer.setSize(window.innerWidth, window.innerHeight);
